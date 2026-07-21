@@ -144,6 +144,26 @@ p:last-child {
   text-decoration: none;
 }
 
+.language-link {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--blue-dark);
+  background: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.language-link:hover {
+  border-color: rgba(22, 120, 220, 0.4);
+  color: var(--blue);
+}
+
 .header-link:hover,
 .text-link:hover,
 .site-footer a:hover {
@@ -1380,11 +1400,17 @@ h3 {
   }
 
   .header-nav {
-    display: none;
+    display: flex;
+    gap: 8px;
   }
 
   .header-link {
-    font-size: 12px;
+    display: none;
+  }
+
+  .language-link {
+    min-height: 32px;
+    padding-inline: 10px;
   }
 
   .landing-hero {
