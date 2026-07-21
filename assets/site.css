@@ -513,6 +513,21 @@ h3 {
   margin-top: 0;
 }
 
+.premium-feature-images {
+  gap: 24px;
+  align-items: center;
+}
+
+.premium-feature-images img.phone-preview {
+  width: min(36%, 220px);
+}
+
+.premium-feature-images img.report-preview {
+  width: min(57%, 340px);
+  border-radius: 12px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+}
+
 .premium-feature {
   color: #ffffff;
   background:
@@ -680,6 +695,79 @@ h3 {
   font-size: 11px;
   line-height: 1.5;
   text-align: right;
+}
+
+.premium-showcase {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1.38fr);
+  align-items: center;
+  gap: 64px;
+  margin-top: 90px;
+  padding-top: 72px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.premium-showcase-copy p:last-child {
+  max-width: 510px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.premium-showcase-media {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.48fr) minmax(320px, 1.52fr);
+  align-items: end;
+  gap: 28px;
+}
+
+.premium-showcase-media figure {
+  position: relative;
+  margin: 0;
+}
+
+.premium-showcase-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.32);
+}
+
+.premium-showcase-media figcaption {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.premium-phone-shot {
+  max-width: 230px;
+  justify-self: end;
+}
+
+.premium-report-stack {
+  min-height: 480px;
+  padding-right: 68px;
+}
+
+.premium-report-stack img:first-child {
+  position: relative;
+  z-index: 2;
+}
+
+.premium-report-stack img:nth-child(2) {
+  position: absolute;
+  z-index: 1;
+  top: 38px;
+  left: 68px;
+  width: calc(100% - 68px);
+  opacity: 0.86;
+}
+
+.premium-report-stack figcaption {
+  position: relative;
+  z-index: 3;
 }
 
 .audience-section {
@@ -1234,6 +1322,15 @@ h3 {
     gap: 48px;
   }
 
+  .premium-showcase {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .premium-showcase-copy p:last-child {
+    max-width: 650px;
+  }
+
   .developer-card {
     grid-template-columns: 140px minmax(0, 1fr);
     gap: 38px;
@@ -1432,6 +1529,19 @@ h3 {
     margin-top: 32px;
   }
 
+  .premium-feature-images {
+    align-items: center;
+    gap: 14px;
+  }
+
+  .premium-feature-images img.phone-preview {
+    width: min(38%, 155px);
+  }
+
+  .premium-feature-images img.report-preview {
+    width: min(58%, 238px);
+  }
+
   .premium-option {
     padding: 28px 22px;
   }
@@ -1445,6 +1555,27 @@ h3 {
   .premium-purchase small {
     max-width: none;
     text-align: left;
+  }
+
+  .premium-showcase {
+    margin-top: 62px;
+    padding-top: 52px;
+  }
+
+  .premium-showcase-media {
+    grid-template-columns: minmax(95px, 0.42fr) minmax(190px, 1.58fr);
+    gap: 14px;
+  }
+
+  .premium-report-stack {
+    min-height: 300px;
+    padding-right: 30px;
+  }
+
+  .premium-report-stack img:nth-child(2) {
+    top: 22px;
+    left: 30px;
+    width: calc(100% - 30px);
   }
 
   .audience-list {
