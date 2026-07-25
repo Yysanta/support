@@ -1057,6 +1057,27 @@ h3 {
   font-size: 17px;
 }
 
+.nudgegoo-store-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.nudgegoo-store-actions .app-store-button.is-disabled {
+  cursor: default;
+  opacity: 0.88;
+  user-select: none;
+}
+
+.nudgegoo-store-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 13px;
+  font-weight: 750;
+}
+
 .nudgegoo-hero-visual {
   align-self: end;
   max-width: 330px;
@@ -1899,6 +1920,13 @@ h3 {
 
   .nudgegoo-hero .nudgegoo-hero-description {
     font-size: 15px;
+  }
+
+  .nudgegoo-store-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 28px;
   }
 
   .nudgegoo-hero-visual {
