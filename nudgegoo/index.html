@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#087fe7" />
     <meta
       name="description"
-      content="登録した場所を出発するときに「忘れ物ない？」とそっと通知するアプリ、NudgeGooのサポートページです。"
+      content="登録した場所を出るときに「忘れ物ない？」とそっと通知する出発リマインダーアプリ、NudgeGooのサポートページです。"
     />
     <title>サポート | NudgeGoo</title>
     <link rel="stylesheet" href="../assets/site.css" />
@@ -15,7 +15,7 @@
       href="https://yysanta.github.io/support/nudgegoo/"
     />
   </head>
-  <body>
+  <body class="nudgegoo-page">
     <a class="skip-link" href="#main-content">本文へ移動</a>
 
     <header class="site-header">
@@ -27,6 +27,9 @@
           </span>
         </a>
         <nav class="header-nav" aria-label="サポートナビゲーション">
+          <a class="header-link" href="#about">機能紹介</a>
+          <a class="header-link" href="#faq">よくある質問</a>
+          <a class="header-link" href="#contact">お問い合わせ</a>
           <a class="header-link" href="./privacy/">プライバシーポリシー</a>
           <a class="header-link" href="../">公式サイト一覧へ</a>
         </nav>
@@ -34,55 +37,211 @@
     </header>
 
     <main id="main-content">
-      <section class="app-support-hero">
-        <div class="container">
-          <p class="eyebrow">NUDGEGOO SUPPORT</p>
-          <h1>NudgeGoo</h1>
-          <p>
-            登録した場所を出発するときに「忘れ物ない？」とそっと通知するアプリです。
-          </p>
+      <section class="app-support-hero nudgegoo-hero">
+        <div class="container nudgegoo-hero-grid">
+          <div class="nudgegoo-hero-copy">
+            <p class="eyebrow">NUDGEGOO SUPPORT</p>
+            <h1>NudgeGoo</h1>
+            <p class="nudgegoo-catch">
+              思い出すのは、あなた。<br />
+              思い出させるのは、NudgeGoo。
+            </p>
+            <p class="nudgegoo-hero-description">
+              登録した場所を出るときに「忘れ物ない？」とそっと通知する、
+              シンプルな出発リマインダーです。
+            </p>
+          </div>
+          <figure class="nudgegoo-hero-visual">
+            <img
+              src="./images/home-notification.webp"
+              alt="忘れ物確認の通知バナーが表示されたNudgeGooのホーム画面"
+              width="460"
+              height="999"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </section>
 
-      <section class="app-support-section">
-        <div class="container app-support-layout">
-          <div class="faq-list">
-            <article class="faq-item">
-              <h2>通知が来ない場合</h2>
-              <p>
-                位置情報を「常に許可」にしているか、通知が許可されているかをご確認ください。電波状況等により通知が遅れる場合があります。
-              </p>
+      <section class="nudgegoo-intro" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">WHAT IS NUDGEGOO?</p>
+            <h2>どんなアプリ？</h2>
+            <p>
+              持ち物を管理するTODOアプリではありません。出発というタイミングで、
+              あなた自身が必要なことを思い出すためのきっかけを届けます。
+            </p>
+          </div>
+
+          <div class="nudgegoo-feature-list">
+            <article class="nudgegoo-feature">
+              <figure class="nudgegoo-screen">
+                <img
+                  src="./images/home-places.webp"
+                  alt="家、職場、スーパーマーケットが登録されたNudgeGooの場所一覧画面"
+                  width="460"
+                  height="999"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="nudgegoo-feature-copy">
+                <p class="nudgegoo-feature-number">01</p>
+                <h3>登録した場所を出るときに、そっと通知</h3>
+                <p>
+                  家や職場はもちろん、よく行くスーパーやお店も登録できます。
+                  場所ごとに通知のオン・オフと半径を設定でき、出発時にだけお知らせします。
+                </p>
+              </div>
             </article>
 
-            <article class="faq-item">
-              <h2>位置情報の扱い</h2>
-              <p>
-                位置情報は端末内でのみ処理され、外部に送信されません。詳しくは<a href="./privacy/">プライバシーポリシー</a>をご覧ください。
-              </p>
+            <article class="nudgegoo-feature">
+              <figure class="nudgegoo-screen">
+                <img
+                  src="./images/check.webp"
+                  alt="キャラクターが忘れ物を確認するNudgeGooの確認画面"
+                  width="460"
+                  height="999"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="nudgegoo-feature-copy">
+                <p class="nudgegoo-feature-number">02</p>
+                <h3>通知のあとに、ひと言だけ</h3>
+                <p>
+                  通知を開くと、キャラクターが「忘れ物チェックできた？」と声をかけます。
+                  長いリストを埋めるのではなく、必要な記憶を呼び戻すための短い確認です。
+                </p>
+              </div>
             </article>
 
-            <article class="faq-item">
-              <h2>購入の復元</h2>
-              <p>
-                キャラクター選択画面の「購入を復元」からお試しください。
-              </p>
+            <article class="nudgegoo-feature">
+              <figure class="nudgegoo-screen">
+                <img
+                  src="./images/farewell.webp"
+                  alt="キャラクターが気をつけてねと見送るNudgeGooの見送り画面"
+                  width="460"
+                  height="999"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="nudgegoo-feature-copy">
+                <p class="nudgegoo-feature-number">03</p>
+                <h3>確認できたら、静かに見送る</h3>
+                <p>
+                  忘れ物を確認したあとは、キャラクターが短い言葉で見送ります。
+                  毎日の出発を邪魔しない、必要なときだけの小さなナッジです。
+                </p>
+              </div>
+            </article>
+
+            <article class="nudgegoo-feature">
+              <figure class="nudgegoo-screen">
+                <img
+                  src="./images/characters.webp"
+                  alt="棒人間、犬、猫、ドラゴン、ロボット、人型キャラクターから選べるNudgeGooのキャラクター選択画面"
+                  width="460"
+                  height="999"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="nudgegoo-feature-copy">
+                <p class="nudgegoo-feature-number">04</p>
+                <h3>6体のキャラクターから選べる</h3>
+                <p>
+                  無料の棒人間に加え、買い切りで5体のキャラクターを選べます。
+                  キャラクターごとに、通知や見送りの口調が変わります。
+                </p>
+              </div>
             </article>
           </div>
 
-          <aside class="app-support-aside">
-            <h2>お問い合わせ</h2>
-            <p>ご質問や不具合のご報告は、既存のサポート窓口からお寄せください。</p>
-            <a
-              class="button button-primary"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdDb0k4PJAORu3d4o4CxCHpVAx6rfV-jXYe_y5rYr1i6vu2IA/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              お問い合わせフォーム
-              <span aria-hidden="true">↗</span>
-            </a>
-            <p><a href="./privacy/">プライバシーポリシー</a></p>
-          </aside>
+          <div class="nudgegoo-privacy-note">
+            <p class="eyebrow">PRIVATE BY DESIGN</p>
+            <h3>位置情報は、端末の外に出ません</h3>
+            <p>
+              登録場所や出発の検知は端末内で処理され、位置情報を開発者のサーバーへ送信しません。
+              詳しくは<a href="./privacy/">プライバシーポリシー</a>をご確認ください。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-support-section nudgegoo-support-section" id="faq">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
+            <h2>よくある質問</h2>
+            <p>設定や使い方で困ったときは、まずこちらをご確認ください。</p>
+          </div>
+
+          <div class="app-support-layout">
+            <div class="faq-list">
+              <article class="faq-item">
+                <h3>通知が来ない場合</h3>
+                <p>
+                  端末の設定で、NudgeGooの位置情報が「常に許可」、通知が許可になっているかをご確認ください。
+                  電波状況や端末の状態などにより、通知が遅れる場合があります。
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>位置情報はどのように扱われますか？</h3>
+                <p>
+                  位置情報は端末内でのみ処理され、開発者のサーバーへ送信されません。
+                  詳しくは<a href="./privacy/">プライバシーポリシー</a>をご覧ください。
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>購入を復元するには？</h3>
+                <p>
+                  キャラクター選択画面の「購入を復元」からお試しください。
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>キャラクターを買うと何が変わりますか？</h3>
+                <p>
+                  キャラクターの見た目に加え、通知と見送りの口調が変わります。
+                  購入はキャラクターごとの買い切りです。
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>無料のままでも使えますか？</h3>
+                <p>
+                  はい。場所の登録、出発通知、確認と見送りなど、コア機能はすべて無料で使えます。
+                  無料の棒人間キャラクターでも機能に違いはありません。
+                </p>
+              </article>
+
+              <article class="faq-item">
+                <h3>通知半径はどれくらいがおすすめですか？</h3>
+                <p>
+                  標準の50mからお試しください。半径を広くすると、その範囲を出るまで通知されないため、
+                  通知が遅く感じることがあります。
+                </p>
+              </article>
+            </div>
+
+            <aside class="app-support-aside" id="contact">
+              <h2>お問い合わせ</h2>
+              <p>
+                FAQで解決しないご質問や不具合のご報告は、サポート窓口からお寄せください。
+              </p>
+              <a
+                class="button button-primary"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdDb0k4PJAORu3d4o4CxCHpVAx6rfV-jXYe_y5rYr1i6vu2IA/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                お問い合わせフォーム
+                <span aria-hidden="true">↗</span>
+              </a>
+              <p><a href="./privacy/">プライバシーポリシー</a></p>
+            </aside>
+          </div>
         </div>
       </section>
     </main>
