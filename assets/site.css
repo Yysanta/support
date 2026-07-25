@@ -1012,7 +1012,8 @@ h3 {
   gap: 20px;
 }
 
-.nudgegoo-page #about,
+.nudgegoo-page #story,
+.nudgegoo-page #features,
 .nudgegoo-page #faq,
 .nudgegoo-page #contact {
   scroll-margin-top: 92px;
@@ -1035,6 +1036,18 @@ h3 {
 
 .nudgegoo-hero-copy {
   padding-bottom: 78px;
+}
+
+.nudgegoo-hero .app-label {
+  margin-bottom: 24px;
+}
+
+.nudgegoo-hero .app-label img {
+  box-shadow: 0 18px 38px rgba(3, 46, 106, 0.3);
+}
+
+.nudgegoo-hero .app-label p:last-child {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .nudgegoo-hero h1 {
@@ -1102,6 +1115,14 @@ h3 {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.nudgegoo-intro .story-heading h2 {
+  font-size: clamp(34px, 3.3vw, 44px);
+}
+
+.nudgegoo-features-heading {
+  margin-top: 128px;
 }
 
 .nudgegoo-feature-list {
