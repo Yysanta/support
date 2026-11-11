@@ -28,7 +28,8 @@ GitHub Pagesは`main`ブランチのリポジトリルートから公開しま�
 
 - 共通利用規約: https://yysanta.github.io/support/terms/
 - 購入・解約・返金: https://yysanta.github.io/support/purchases/
-- 特商法表記の公開前下書き: [docs/tokushoho-draft.md](docs/tokushoho-draft.md)
+- 特商法表記の確認用ページ: [legal/index.html](legal/index.html)
+- 特商法表記の公開前チェック: [docs/tokushoho-draft.md](docs/tokushoho-draft.md)
 
 規約の初回公開前に、運営者・適用開始日・既存利用者への案内方法と、既存のApp Store EULAの設定・整合を確認してください。初回の適用は、本サイトへの掲載だけで全既存利用者が同意したとは扱わず、必要なアプリ内案内・同意を整えてください。適用開始日を確定し、規約のレビュー用表記を置き換えてください。購入案内のレビュー用表記も公開前に外してください。
 
