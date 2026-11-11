@@ -1,0 +1,8 @@
+.legal-layout { max-width: 960px; }
+.legal-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.legal-layout .privacy-article ul { grid-template-columns: 1fr; }
+.legal-layout nav { margin-bottom: 32px; }
+.legal-layout section { scroll-margin-top: 100px; }
+.legal-layout dt { margin-top: 20px; font-weight: 700; }
+.legal-layout dd { margin: 8px 0 24px; color: var(--ink-soft); }
+.legal-layout h1, .legal-layout h2, .legal-links a { overflow-wrap: anywhere; }
